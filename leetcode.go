@@ -237,13 +237,22 @@ func longestCommonPrefix(strs []string) string {
 
 //leetcode problem 5
 func longestPalindrome(s string) string {
+	if len(s) <=1 {
+		return s
+	}
+
 	if isPalindromeStr(s) {
 		return s
-	} else  {
-		if isPalindromeStr(s[0:len(s)]) {
-			
-		}
 	}
+
+	if isPalindromeStr(s[0:len(s)]) {
+		return s[0:len(s)]
+	}
+
+	if isPalindromeStr(s[1:len(s)]) {
+		return s[1:len(s)]
+	}
+
 	return ""
 }
 
