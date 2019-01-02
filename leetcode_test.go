@@ -127,10 +127,15 @@ func TestLongestCommonPrefix(t *testing.T) {
 
 
 func TestLongestP(t *testing.T) {
-	str := "babad"
+	str := "babaddtattarrattatddetartrateedredividerb"
 	res := longestPalindrome(str)
 
 	if res != "bab" {
-		t.Error("res is %s and failed", res)
+		t.Errorf("res is %s and failed", res)
 	}
+}
+
+func TestString(t *testing.T) {
+	str := "babad"
+	fmt.Print(str[0:len(str)-1])
 }

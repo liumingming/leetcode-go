@@ -199,8 +199,6 @@ func isPalindrome(x int) bool {
 
 //leetcode problem - 14
 func longestCommonPrefix(strs []string) string {
-	var res string
-
 	var curr string
 	if len(strs) == 0 || len(strs[0]) == 0 {
 		return ""
@@ -211,63 +209,56 @@ func longestCommonPrefix(strs []string) string {
 
 	for i := 1; i < len(strs); i++ {
 		if len(strs[i]) == 0 {
-			return ""
+			return curr
 		}
-
+		var temp string
 		for j := 1; j <= len(strs[i]); j++ {
 			if len(strs[0]) < j || strs[i][0:j] != strs[0][0:j] {
-				return res
+				break
 			}
 
-			curr =  strs[0][0:j]
+			temp =  strs[0][0:j]
 		}
 
 
-		if len(res) == 0 {
+		if len(temp) == 0 {
 			break
 		}
 
-		if curr != temp {
-			return ""
+		if curr == "" || len(curr) > len(temp) {
+			curr = temp
 		}
 
 	}
-	return res
+	return curr
 }
 
 //leetcode problem 5
 func longestPalindrome(s string) string {
-	if len(s) <=1 {
+	length := len(s)
+
+	if length <= 1 {
+		return s
+	}
+	reverse := reverseString(s)
+
+	if s == reverse {
 		return s
 	}
 
-	if isPalindromeStr(s) {
-		return s
-	}
+	res1 := longestPalindrome(s[0:length-1])
 
-	if isPalindromeStr(s[0:len(s)]) {
-		return s[0:len(s)]
-	}
+	res2 :=  longestPalindrome(s[1:length])
 
-	if isPalindromeStr(s[1:len(s)]) {
-		return s[1:len(s)]
+	if len(res1) >= len(res2)  {
+		return res1
+	} else {
+		return res2
 	}
-
-	return ""
 }
 
-func isPalindromeStr(s string) bool {
-	if len(s) <= 1 {
-		return false
-	}
-	res := reverseString(s)
 
-	if s == res {
-		return true
-	}
 
-	return false
-}
 
 
 
