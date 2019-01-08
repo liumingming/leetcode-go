@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 import (
 	"fmt"
@@ -127,11 +127,19 @@ func TestLongestCommonPrefix(t *testing.T) {
 
 
 func TestLongestP(t *testing.T) {
-	str := "babaddtattarrattatddetartrateedredividerb"
+	//str := "babaddtattarrattatddetartrateedredividerb"
+	//res := longestPalindrome(str)
+	//
+	//if res != "ddtattarrattatdd" {
+	//	t.Errorf("res is %s and failed", res)
+	//}
+	str := "eabcb"
 	res := longestPalindrome(str)
 
-	if res != "bab" {
+	if res != "bcb" {
 		t.Errorf("res is %s and failed", res)
+	} else {
+		fmt.Println(res)
 	}
 }
 
