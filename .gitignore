@@ -16,4 +16,4 @@ src/dolly/dolly
 .DS_Store
 src/.DS_Store
 .build/
-
+.idea/
