@@ -5,16 +5,14 @@ import (
 	"strconv"
 )
 
-//leetcode problem-7 整数反转
-func reverse(x int) int {
-	var sum int
-	var flag int
+//leetcode problem-9 回文数
+func isPalindrome(x int) bool {
+	tmp := x
 	if x < 0 {
-		flag = -1
-	}else {
-		flag = 1
+		return false
 	}
 
+	var sum int
 	x = int(math.Abs(float64(x)))
 	var count = len(strconv.Itoa(x))
 
@@ -25,12 +23,13 @@ func reverse(x int) int {
 		}
 		x = x / 10
 		count--
-
 	}
 
-	if sum >= math.MaxInt32-1 || sum <= math.MinInt32-1 {
-		return 0
+	if tmp == sum {
+
+		return  true
 	}
 
-	return int(sum) * flag
+	return false
 }
+

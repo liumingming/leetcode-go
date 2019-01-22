@@ -2,10 +2,10 @@ package leetcode
 
 const SIZE = 1000
 
-func Manacher(str []byte) string {
-
+//problem-5 最长回文子串
+func longestPalindrome(s string) string {
+	str := []byte(s)
 	manacher := ""
-
 	if len(str) == 0 {
 		return manacher
 	}
@@ -26,6 +26,5 @@ func Manacher(str []byte) string {
 			i--
 		}
 	}
-
 	return manacher
 }
