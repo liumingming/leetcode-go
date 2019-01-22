@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.iml
+.glide/
+.idea/
+.bin/
+!.bin/*.sh
+
+.vscode/
+src/dolly/dolly
+
+.DS_Store
+src/.DS_Store
+.build/
+
