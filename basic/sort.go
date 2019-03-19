@@ -12,3 +12,20 @@ func bubbleSort(nums []int) []int {
 	}
 	return nums
 }
+
+
+/*插入排序*/
+func insertSort(nums []int) []int {
+	length := len(nums)
+	if length <= 1 {
+		return nums
+	}
+	for i := 1; i < length; i++ {
+		for j := 0; j < i; j++ {
+			if nums[j] > nums[i] {
+				nums[j], nums[i] = nums[i], nums[j]
+			}
+		}
+	}
+	return nums
+}

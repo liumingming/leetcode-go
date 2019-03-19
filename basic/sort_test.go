@@ -11,3 +11,11 @@ func TestBubbleSort(t *testing.T) {
 	//targets := []int{1,2,3,4,5,6}
 	fmt.Println(res)
 }
+
+
+func TestInsertSort(t *testing.T) {
+	nums := []int{4,1,5,3,2,6}
+	res := insertSort(nums)
+	//targets := []int{1,2,3,4,5,6}
+	fmt.Println(res)
+}
