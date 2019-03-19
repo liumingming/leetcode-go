@@ -44,16 +44,6 @@ func TestRomanToInt(t *testing.T) {
 }
 
 
-func TestLengthOfLongestSubstring (t *testing.T) {
-	input :=  "abcabcbb"
-	res := lengthOfLongestSubstring(input)
-
-	if res != 3 {
-		t.Errorf(`lengthOfLongestSubstring(%q) = %d`, input,  res)
-	}
-
-}
-
 
 func TestReverse(t *testing.T) {
 	a := 321
@@ -157,4 +147,15 @@ func reverseString(s string) string {
 		b[last] = s[i]
 	}
 	return string(b)
+}
+
+func Test_TolowerCase(t *testing.T)  {
+	 str :=  "ALOVELY"
+	 target  := "alovely"
+
+	 res := toLowerCase(str)
+	 if res != target {
+		 t.Errorf("res is %s and target is %s", res, target)
+	 }
+
 }
