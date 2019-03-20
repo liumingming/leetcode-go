@@ -159,3 +159,19 @@ func Test_TolowerCase(t *testing.T)  {
 	 }
 
 }
+
+func Test_NumJewelsInStones(t *testing.T)  {
+	J :=  "aA"
+	S :=  "aAAbbbb"
+	res := numJewelsInStones(J, S)
+	if res != 3 {
+		t.Errorf("res is %d and target is %d", res, 3)
+	}
+
+}
+
+func Test_SortedSquares(t *testing.T)  {
+	A :=  []int{-4,-1,0,3,10}
+	res := sortedSquares(A)
+	fmt.Println(res)
+}

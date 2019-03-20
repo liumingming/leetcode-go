@@ -1,7 +1,7 @@
 package basic
 
 /*冒泡排序*/
-func bubbleSort(nums []int) []int {
+func BubbleSort(nums []int) []int {
 	length := len(nums)
 	for i:= 0; i< length; i++{
 		for j:= i+1; j < length ;j++  {
@@ -15,7 +15,7 @@ func bubbleSort(nums []int) []int {
 
 
 /*插入排序*/
-func insertSort(nums []int) []int {
+func InsertSort(nums []int) []int {
 	length := len(nums)
 	if length <= 1 {
 		return nums
