@@ -43,3 +43,12 @@ func (s *SingleList) Reverse(){
 	curr.next = prev
 	s.head = curr
 }
+
+func (s *SingleList) Delete(node *ListNode){
+	curr := s.head.next
+	for  curr.next != nil {
+		if curr.data == node.data {
+			curr.next = curr.next.next
+		}
+	}
+}
