@@ -175,3 +175,11 @@ func Test_SortedSquares(t *testing.T)  {
 	res := sortedSquares(A)
 	fmt.Println(res)
 }
+
+
+
+func Test_UniqueMorseRepresentations(t *testing.T) {
+	words := []string{"gin", "zen", "gig", "msg"}
+	res := uniqueMorseRepresentations(words)
+	fmt.Println(res)
+}
