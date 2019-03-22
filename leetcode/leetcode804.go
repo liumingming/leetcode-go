@@ -1,5 +1,6 @@
 package leetcode
 
+/*No.804*/
 func uniqueMorseRepresentations(words []string) int {
 	var count int
 	var dict  = []string{".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."}
@@ -8,9 +9,6 @@ func uniqueMorseRepresentations(words []string) int {
 		var moseStr string
 		for _, ch := range  word {
 			pos := ch - 97
-			if pos < 0 || pos > 25 {
-				break
-			}
 			moseStr += dict[pos]
 		}
 		if _, ok := moseMap[moseStr]; !ok {
