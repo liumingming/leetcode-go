@@ -29,3 +29,25 @@ func InsertSort(nums []int) []int {
 	}
 	return nums
 }
+
+/*快速排序*/
+func QuickSort(nums []int) []int {
+	if len(nums) <= 1 {
+		return nums
+	}
+
+	var pivot = nums[0]
+	var less []int
+	var greater []int
+	for i := 1 ; i < len(nums) ;i++  {
+		if nums[i] <= pivot {
+			less = append(less, nums[i])
+		}
+
+		if nums[i] > pivot {
+			greater = append(greater, nums[i])
+		}
+
+	}
+	return append(append(QuickSort(less),  pivot), QuickSort(greater)...)
+}
