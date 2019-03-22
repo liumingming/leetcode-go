@@ -6,7 +6,7 @@ import (
 
 func sortedSquares(A []int) []int {
 	length := len(A)
-	if length <= 1 {
+	if length <= 0 {
 		return A
 	}
 	for i := 0; i < length; i++ {
