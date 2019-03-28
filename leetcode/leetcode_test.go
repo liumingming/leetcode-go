@@ -183,3 +183,8 @@ func Test_UniqueMorseRepresentations(t *testing.T) {
 	res := uniqueMorseRepresentations(words)
 	fmt.Println(res)
 }
+
+func Test_GenerateMatrix(t *testing.T) {
+	res := generateMatrix(3)
+	fmt.Println(res)
+}

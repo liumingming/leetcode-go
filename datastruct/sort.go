@@ -1,4 +1,4 @@
-package basic
+package datastruct
 
 /*冒泡排序*/
 func BubbleSort(nums []int) []int {

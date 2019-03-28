@@ -1,4 +1,4 @@
-package basic
+package datastruct
 
 //二分查找
 func binarySearch(nums []int, target int) int {
