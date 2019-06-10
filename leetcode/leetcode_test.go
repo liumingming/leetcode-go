@@ -188,3 +188,12 @@ func Test_GenerateMatrix(t *testing.T) {
 	res := generateMatrix(3)
 	fmt.Println(res)
 }
+
+
+func Test_RemoveReplicate2(t *testing.T) {
+	nums := []int{1,1,1,2,2,3,}
+	arrs := RemoveDuplicates2(nums)
+	if arrs != 5 {
+		t.Errorf("remove failed")
+	}
+}
