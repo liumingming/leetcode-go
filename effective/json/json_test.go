@@ -1,4 +1,4 @@
-package effective
+package main
 
 import (
 	"encoding/json"
@@ -7,7 +7,7 @@ import (
 )
 
 func TestJson(t *testing.T) {
-	user := User{Email:"mo", Password:"", Tips:nil}
+	user := User{Email: "mo", Password:"", Tips:nil}
 	str, _ := json.Marshal(user)
 
 	fmt.Println(string(str))

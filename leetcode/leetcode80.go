@@ -7,12 +7,13 @@ func RemoveDuplicates2(nums []int) int {
 	if len(nums) <= 2 {
 		return len(nums)
 	}
-	index := 2
-	for j := 2; j < len(nums); j++ {
-		if nums[j] == nums[index-2]  {
-			index++
-			nums[j] = nums[index]
+
+	index := 0
+	for i := 2; i < len(nums); i++ {
+		if nums[index] == nums[i] {
+			nums[index] = nums[i+1]
 		}
+		index++
 	}
 	fmt.Println(nums)
 	return index+1

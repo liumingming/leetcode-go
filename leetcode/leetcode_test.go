@@ -191,9 +191,10 @@ func Test_GenerateMatrix(t *testing.T) {
 
 
 func Test_RemoveReplicate2(t *testing.T) {
-	nums := []int{1,1,1,2,2,3,}
+	nums := []int{0,0,1,1,1,1,2,3,3}
+	//nums := []int{1,1,1,2,2,3,}
 	arrs := RemoveDuplicates2(nums)
-	if arrs != 5 {
+	if arrs != 7 {
 		t.Errorf("remove failed")
 	}
 }
