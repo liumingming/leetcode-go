@@ -2,7 +2,7 @@ package gotype
 
 type ListNode struct {
 	Data interface{}
-	Next *LNode
+	Next *ListNode
 }
 
 func NewListNode()  *ListNode {
