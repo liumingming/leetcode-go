@@ -2,7 +2,7 @@ package leetcode
 
 import "sort"
 
-//leetcode problem-136 只出现一次的数字1
+//problem-136 只出现一次的数字1
 func singleNumber(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]

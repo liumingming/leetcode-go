@@ -1,7 +1,7 @@
 package leetcode
 
 
-//leetcode problem-14 最长公共前缀
+//problem-14 最长公共前缀
 func longestCommonPrefix(strs []string) string {
 	var curr string
 	if len(strs) == 0 || len(strs[0]) == 0 {

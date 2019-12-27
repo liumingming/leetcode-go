@@ -1,6 +1,6 @@
 package leetcode
 
-//leetcode problem-13 罗马数字转整数
+//problem-13 罗马数字转整数
 func romanToInt(s string) int {
 	roman_map := make(map[string]int)
 	roman_map = map[string]int{
