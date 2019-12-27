@@ -33,10 +33,6 @@ func main()  {
 	//delete
 	delete(m, "liumingming")
 	fmt.Println(m)
-
-
-
-
 }
 
 
