@@ -1,4 +1,4 @@
-package seven
+package gotype
 
 import "math/rand"
 
