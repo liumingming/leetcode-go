@@ -64,3 +64,5 @@ func ReversePrint(node *ListNode){
 	}
 	node.Next = pre
 }
+
+
