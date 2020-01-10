@@ -33,6 +33,19 @@ func (p *SliceQueue)GetBack() interface{}{
 	return p.arr[p.Size()-1]
 }
 
+func (p *SliceQueue)DeQueue() interface{} {
+	p.Lock()
+	defer p.Unlock()
+
+	if len(p.arr) != 0 {
+		first := p.arr[0]
+		p.arr = p.arr[1:]
+		return first
+	} else {
+		return nil
+	}
+}
+
 
 
 

@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-//leetcode problem-9 回文数
+//problem-9 回文数
 func isPalindrome(x int) bool {
 	tmp := x
 	if x < 0 {

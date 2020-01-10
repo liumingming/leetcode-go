@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-//leetcode problem-7 整数反转
+//problem-7 整数反转
 func reverse(x int) int {
 	var sum int
 	var flag int
