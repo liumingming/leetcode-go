@@ -198,3 +198,9 @@ func Test_RemoveReplicate2(t *testing.T) {
 		t.Errorf("remove failed")
 	}
 }
+
+func Test_subsets(t *testing.T) {
+	nums := []int{0}
+	result := subsets(nums)
+	fmt.Println(result)
+}

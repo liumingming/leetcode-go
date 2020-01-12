@@ -49,10 +49,7 @@ func PrintList(head *ListNode)  {
 }
 
 func PrintListWithNoHead(head *ListNode)  {
-	for  {
-		if head == nil {
-			break
-		}
+	for head != nil {
 		fmt.Print(head.Data, " ")
 		head = head.Next
 	}

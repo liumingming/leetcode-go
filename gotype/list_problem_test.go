@@ -16,12 +16,16 @@ func TestReverse(t *testing.T) {
 
 
 func TestReverseNoHeadNode(t *testing.T) {
-
 	head := CreateListNoHead()
 	PrintListWithNoHead(head)
-	fmt.Println()
-	ReverseNoHeadNode(head)
+	fmt.Println("-----")
+	head = ReverseNoHeadNode(head)
 	PrintListWithNoHead(head)
+}
+
+func TestReversePrint(t *testing.T) {
+	head := CreateListNoHead()
+	ReversePrint(head)
 }
 
 
