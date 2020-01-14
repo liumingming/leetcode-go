@@ -20,7 +20,7 @@ func main()  {
 
 	tips := Tips{Name:"hello"}
 	user := User{
-		Email:    "liumingming",
+		Email:    "liu ming ming",
 		Password: "123456",
 		Tips:     &tips,
 	}
@@ -35,7 +35,7 @@ func main()  {
 	var user2 User
 	err = json.Unmarshal(jsonStr, &user2)
 	if err != nil {
-		fmt.Println("unmarsh failed")
+		fmt.Println("unmarshal failed")
 	}
 	fmt.Println(user2)
 }

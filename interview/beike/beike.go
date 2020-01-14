@@ -13,20 +13,7 @@ var arr [][]int = [][]int{
 
 func PrintArr(arr [][]int, row int)  {
 	var s [][]int
-	
-	for {
-		for i:=0; i<row ;i++  {
-			var k []int
 
-			k = append(k, arr[i][step])
-			s = append(s, k)
-		}
-		
-		break
-	}
-	
-
-	fmt.Println(s)
 }
 
 func generArr(arr1, arr2 []int)  {

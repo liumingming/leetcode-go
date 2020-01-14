@@ -1,7 +1,5 @@
 package leetcode
 
-import "fmt"
-
 //problem-80 删除有序数组中的重复元素, 每个元素最多出现两次
 func RemoveDuplicates2(nums []int) int {
 	if len(nums) <= 2 {
@@ -15,6 +13,5 @@ func RemoveDuplicates2(nums []int) int {
 		}
 		index++
 	}
-	fmt.Println(nums)
 	return index+1
 }
