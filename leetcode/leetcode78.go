@@ -28,5 +28,4 @@ func generate(i int,  nums []int, item []int){
 
 	copy(temp,item[:len(item)-1])
 
-	generate(i+1, nums, temp)
 }
