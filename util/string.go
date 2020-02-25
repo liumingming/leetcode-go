@@ -10,3 +10,4 @@ func In(s string, lst []string) bool {
 	}
 	return false
 }
+

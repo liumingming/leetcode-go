@@ -3,12 +3,15 @@ package datastruct
 
 //数组栈
 type Stack struct {
-	data [100]int
+	capacity int
+	data []int
 	top int
 }
 
-func NewStack() *Stack {
+func NewStack(capacity int) *Stack {
 	return &Stack{
+		capacity:capacity,
+		data:make([]int, capacity, capacity),
 	}
 }
 

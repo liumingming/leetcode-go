@@ -6,7 +6,7 @@ import (
 )
 
 func TestNewStack(t *testing.T) {
-	stack := NewStack()
+	stack := NewStack(100)
 	stack.Push(1)
 	stack.Push(2)
 	stack.Push(3)

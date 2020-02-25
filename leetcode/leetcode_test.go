@@ -204,3 +204,12 @@ func Test_subsets(t *testing.T) {
 	result := subsets(nums)
 	fmt.Println(result)
 }
+
+func Test_reverseVowels(t *testing.T)  {
+	fmt.Println(reverseVowels("hello"))
+}
+
+func Test_Stack(t *testing.T)  {
+	res := lengthOfLastWord("12")
+	fmt.Println(res)
+}
