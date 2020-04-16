@@ -16,9 +16,6 @@ func NewStack(capacity int) *Stack {
 }
 
 func (s *Stack)Push(data int) {
-	if s.top == 100 {
-		panic("stack is in full")
-	}
 	s.data[s.top] = data
 	s.top++
 }
